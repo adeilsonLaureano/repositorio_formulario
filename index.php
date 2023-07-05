@@ -50,25 +50,30 @@ if(!empty($formData['addUser'])){
 }
 
 ?>
+<div class="container">
+    <div class="row">
+        <div class="col-4 mx-auto">
+        <form name="createUser" class="p-2"  method="POST" action="" style="background-color: lightblue; margin-radius: 5px;">
+        <div class="mb-3 mt-3">
+            <label for="nome" class="form-label">Nome:</label><br>
+            <input type="text" class="form-control" placeholdder="Nome completo" name="nome" required><br>
+        </div>
+            
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label><br>
+            <input type="text" class="form-control" placeholdder="Email" name="email" required><br>
+        </div>
 
-<form name="createUser" class="sm-3 mx-auto"  method="POST" action="" style="background-color: lightblue; margin-radius: 5px;">
-<div class="mb-3 mt-3">
-    <label for="nome" class="form-label">Nome:</label><br>
-    <input type="text" class="form-control" placeholdder="Nome completo" name="nome" required><br>
-</div>
-    
-<div class="mb-3 mt-3">
-    <label for="email" class="form-label">Email:</label><br>
-    <input type="text" class="form-control" placeholdder="Email" name="email" required><br>
-</div>
+        <div class="mb-3 mt-3">
+            <label for="password" class="form-label">Senha:</label><br>
+            <input type="password" class="form-control" placeholdder="Senha" name="password" required><br><br>
+        </div>
 
-<div class="mb-3 mt-3">
-    <label for="password" class="form-label">Senha:</label><br>
-    <input type="password" class="form-control" placeholdder="Senha" name="password" required><br><br>
+            <input type="submit" class="btn btn-primary" value="Cadastrar" name="addUser">
+        </form>
+        </div>
+    </div>
 </div>
-
-    <input type="submit" class="btn btn-primary" value="Cadastrar" name="addUser">
-</form>
 
 </body>
 </html>
