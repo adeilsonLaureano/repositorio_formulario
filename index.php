@@ -51,7 +51,7 @@ if(!empty($formData['addUser'])){
 
 ?>
 
-<form name="createUser"  method="POST" action="">
+<form name="createUser" class="sm-3 mx-auto"  method="POST" action="" style="background-color: lightblue; margin-radius: 5px;">
 <div class="mb-3 mt-3">
     <label for="nome" class="form-label">Nome:</label><br>
     <input type="text" class="form-control" placeholdder="Nome completo" name="nome" required><br>
